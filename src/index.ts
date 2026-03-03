@@ -1,8 +1,10 @@
 import express, { Request, Response, NextFunction } from "express";
 import { createProxyMiddleware, Options } from "http-proxy-middleware";
+import dotevn from "dotenv"
+dotevn.config();
 
 const app = express();
-const PORT = 5000;
+const PORT = process.env.PORT;
 
 // Services URLs
 const USER_SERVICE_URL = "http://localhost:5001";
