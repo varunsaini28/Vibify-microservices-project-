@@ -7,7 +7,7 @@ const app = express();
 const PORT = process.env.PORT;
 
 // Services URLs
-const USER_SERVICE_URL = "http://localhost:5001";
+const USER_SERVICE_URL = process.env.USER_SERVICE_URL;
 const PRODUCT_SERVICE_URL = "http://localhost:5002";
 const ORDER_SERVICE_URL = "http://localhost:5003";
 
